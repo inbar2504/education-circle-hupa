@@ -55,6 +55,7 @@ export default {
   },
   methods: {
     showHome() {
+      console.log("working");
       this.page = 1;
     },
     showExplanations() {
