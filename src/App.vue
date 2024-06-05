@@ -44,7 +44,6 @@ import * as directives from "vuetify/directives";
 
 export default {
   name: "app",
-  // props: ],
   components: {
     Explanations,
     Exercises,
@@ -52,7 +51,6 @@ export default {
   data() {
     return {
       page: 0,
-      // redBook1: require("@/assets/red-book-1.png"),
     };
   },
   methods: {
@@ -84,7 +82,6 @@ export default {
 * {
   overflow-x: hidden;
   text-align: center;
-  /* direction: rtl; */
 }
 body {
   /* background-size: 100% 100%; */
@@ -101,7 +98,7 @@ body {
     z-index: 10;
     background-color: bisque;
     position: absolute;
-    bottom: 3vh;
+    top: 85.5vh;
     border-radius: 0px;
     left: 10vw;
     padding: 20px;

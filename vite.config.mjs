@@ -10,6 +10,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/education-circle1/',
   plugins: [
     Vue({
       template: { transformAssetUrls }
