@@ -6,17 +6,16 @@
     <p>יש לדפדף כדי לראות את שלבי תהליך העיבוד</p>
     <br />
     <swiper
-          :slides-per-view="1"
-          :space-between="50"
+          
           :navigation="true"
           :modules="modules"
           class="mySwiper"
           >
-          <swiper-slide class="card-slide">1 שלב<br />איתור דוגמאות <br />משלב התצפית</swiper-slide>
-          <swiper-slide class="card-slide">שלב 2<br />איתור מכנה משותף לסימפטומים שונים</swiper-slide>
-          <swiper-slide class="card-slide">שלב 3<br />בחירת תופעות-2 לשיפור <br />ו2 לשימור</swiper-slide>
-          <swiper-slide class="card-slide">שלב 4<br />ניסוח תופעות</swiper-slide>
-          <swiper-slide class="card-slide">שלב 5<br />כתיבת הערות במידה ויש</swiper-slide>
+          <swiper-slide class="card-slide"><div class="text-card"><b>1 שלב</b><br />איתור דוגמאות <br />משלב התצפית</div></swiper-slide>
+          <swiper-slide class="card-slide"><div class="text-card"><b>שלב 2</b><br />איתור מכנה משותף לסימפטומים שונים</div></swiper-slide>
+          <swiper-slide class="card-slide"><div class="text-card"><b>שלב 3</b><br />בחירת תופעות-2 לשיפור <br />ו2 לשימור</div></swiper-slide>
+          <swiper-slide class="card-slide"><div class="text-card"><b>שלב 4</b><br />ניסוח תופעות</div></swiper-slide>
+          <swiper-slide class="card-slide"><div class="text-card"><b>שלב 5</b><br />כתיבת הערות במידה ויש</div></swiper-slide>
     </swiper>
     <div id="heart">
       <br />
@@ -86,7 +85,7 @@ export default {
     },
     showQuestions() {
         this.showQuestion=true;
-        this.countDownTimer();
+        // this.countDownTimer();
     },
     BackToHomePage() {
       this.$emit("finish-stop-four");
@@ -113,11 +112,26 @@ export default {
   padding: 60px;
   font-size: 7vmin;
 }
-
+/* .swiper {
+  margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    width: 75vw;
+} */
+.text-card {
+  width: 50vw;
+  font-size: 6.5vmin;
+ }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 10px);
     right: auto;
     color: #e9c46a;
+
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 10px);
@@ -127,11 +141,12 @@ export default {
 .card-slide {
   /* border: 2px solid;
   border-radius: 15px; */
-  width: 70vw !important;
+  width: 50vw; 
   height: 16vh;
   justify-content: center;
   display: flex;
   align-items: center;
+
 }
 #level-header {
   font-family: 'assistant-bold';
@@ -189,7 +204,6 @@ export default {
 button {
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     background-color: #1a1a1a;
@@ -199,5 +213,7 @@ button {
     color: #2a9d8f;
     background-color: #264653;
     font-family: 'assistant-bold';
+    padding: 5px;
+    width: 30vw;
 }
 </style>

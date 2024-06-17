@@ -1,6 +1,6 @@
 <template>
     <div id="ex6">
-        <h2 id="you-right">🎉 נכון,כל הכבוד! 🎉</h2>
+        <h2 id="you-right">🎉נכון,כל הכבוד🎉</h2>
         <h2 id="try-again">&#x274C;תשובה לא נכונה, נסו שנית &#x274C; </h2>
         <br /><br>
         <h2 id="header-bold">לחץ על השלבים בתהליך העיבוד לפי הסדר שלהם</h2>
@@ -17,7 +17,7 @@
         
         <div>
             <h1 id= "num-30"></h1>
-            <button class = "optional" id= "num-3" value="not-press" @click = "ratedAnswer('num-3')">בחירת2 תופעות לשימור ו2 תופעות לשימור</button>
+            <button class = "optional" id= "num-3" value="not-press" @click = "ratedAnswer('num-3')">בחירת 2 תופעות לשימור ו2 תופעות לשימור</button>
         </div>
        
         <div>
@@ -40,10 +40,10 @@
             <br /><br/>
             <button @click="nextQuestion">המשך</button>
        </div>
-       <br /><br />
+       <br />
         <button @click="checkAnswer" id="check">בדיקה</button>
         <button @click="nextQuestion" id="countinu">המשך</button>
-        <br /><br />
+        <br />
     </div>
 </template>
 
@@ -107,7 +107,6 @@ export default {
                 document.getElementById("try-again").style.display = "none";
 
             } if(this.countWrong == 2) {
-                console.log("wronggg twicee!!!!!!!!!!!!!");
                 document.getElementById("show-answer").style.display = "block";
             }
         },
@@ -145,18 +144,32 @@ h1 {
 }
 #you-right {
     display: none;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    font-family: 'assistant-bold';
+    font-size: 8vmin;
 }
 #countinu {
     display: none;
 }
 #try-again {
     display: none;
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    font-family: 'assistant-bold';
+    font-size: 7vmin;
 }
 .optional {
     width: 53vw;
-    height: 13vh;
-    font-size: 6vmin;
-    padding: 3px;
+    height: 11vh;
+    font-size: 5vmin;
+    padding: 4px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -165,6 +178,7 @@ h1 {
     position: relative;
     transform: translateX(-50%);
     left: 50%;
+    margin: -10px;
 }
 #check {
     display: none;
@@ -187,7 +201,7 @@ button {
     padding: 0.6em 1.2em;
     font-size: 6vmin;
     font-weight: 500;
-    background-color: #1a1a1a;
+    background-color: #e9c46a;
     cursor: pointer;
     transition: border-color 0.25s;
     position: relative;

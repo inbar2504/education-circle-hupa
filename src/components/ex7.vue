@@ -1,12 +1,12 @@
 <template>
     <div id="ex7">
-        <div id="orange-line">
+      <div id="orange-line">
       <p id="header">סוף התרגול</p>
-    </div>
-    <div id="yellow-line"></div>
-    <div id="blue-line"></div>
-    <div id="dark-blue-line">
-        <br /><br />
+      </div>
+      <div id="yellow-line"></div>
+      <div id="blue-line"></div>
+      <div id="dark-blue-line">
+          <br /><br />
         <p id="bold-header">האם ברצונך</p>
         <!-- <button @click="endLomda" class="buttons">לסיים את הלומדה</button> -->
         <button @click="backToStart" class="buttons">לחזור לתחילת הלומדה</button>

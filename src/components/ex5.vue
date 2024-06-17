@@ -103,15 +103,30 @@ export default {
 }
 #try-again {
     display: none;
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    font-family: 'assistant-bold';
+    font-size: 7vmin;
+
 }
 #wrong-twice {
     display: none;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    font-family: 'assistant-bold';
+    font-size: 8vmin;
 }
 #question {
     position: absolute;
     left: 50%;
-    top: 20vh;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
     width: 90vw;
 }
 </style>

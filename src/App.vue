@@ -2,8 +2,8 @@
   <div id="app">
     <div v-if="page === 0 || page === 1">
       <div id="orange-line">
-      <p id="header">מעגל החניכה</p>
-    </div>
+        <p id="header">מעגל החניכה</p>
+      </div>
     <div id="yellow-line"></div>
     <div id="blue-line"></div>
     <div id="dark-blue-line">
@@ -194,13 +194,13 @@ body {
   position: absolute;
     top: 50%;
     width: 21%;
-    left: 32%;
+    left: 35%;
 }
 #orange-book-2 {
   position: absolute;
     top: 49%;
     width: 34%;
-    left: 14%;
+    left: 19%;
 }
 #yellow-book-2 {
   position: absolute;

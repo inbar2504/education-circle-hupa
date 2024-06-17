@@ -10,7 +10,7 @@
             <button id="right" @click="checkAnswer('right')" class="ans">מודעות ,תפיסה ויישום</button>
             <button id= "wrong1" @click="checkAnswer('wrong')" class="ans">משמעת,תפיסה ויישום</button>
             <button id= "wrong2" @click="checkAnswer('wrong')" class="ans">משמעות, תפקיד ויחס</button>
-            <button id= "wrong3" @click="checkAnswer('wrong')" class="ans">משעות תפקיד ויישום</button>
+            <button id= "wrong3" @click="checkAnswer('wrong')" class="ans">משמעות, תפקיד ויישום</button>
              <button @click="nextQuestion" id="countinu">המשך</button>
         </div>
         

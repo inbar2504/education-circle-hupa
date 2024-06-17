@@ -10,12 +10,15 @@
       <p>בעת ביצוע משוב חשוב לשים לב לדגשים הבאים</p>
       <br />
       <swiper
-        :slides-per-view="1"
-        :space-between="50"
+        
+
         :navigation="true"
         :modules="modules"
         class="mySwiper"
       >
+      <!-- :slides-per-view="1"
+        :space-between="50" -->
+
         <swiper-slide class="card-slide" id="o1"
           >תמיכה באגו ועירור מוטיבציה</swiper-slide
         >
@@ -31,7 +34,7 @@
           >עיתוי ומיון מתאים לביצוע שיחת המשוב</swiper-slide
         >
       </swiper>
-      <br /><br /><br />
+      <br /><br />
       <v-card class="mx-auto card" width="300">
         <v-list v-model:opened="open">
           <v-list-item class="header-top"><b>מבנה המשוב</b></v-list-item>
@@ -84,7 +87,7 @@
           </v-list-group>
         </v-list>
       </v-card>
-      <br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
       <p class="level-header">מתן המשוב</p>
       <p>
         בעת מתן המשוב נבדוק קודם מה הסיבה שלושת הסיבות שנבדוק הן: מודעות , תפיסה
@@ -95,34 +98,33 @@
       <button class="mati" @click="showMati('mu')">מודעות</button>
       <div id="mu" class="mati3">
         <br />
-        -מודעות-<br />
-        ?מהיכן זה נובע<br />
-        .הנחנך לא ידע שצריך לבצע<br /><br />
-        :שאלות לאבחון<br />
-        ?שמת לב? ראית? שמעת? הרגשת<br /><br />
-        :דרכי טיפול<br />
-        .מתן טיפים לתשומת לב, דוגמאות מהתצפית, העלאת חשיבות<br />
+        <b class="bold-h">-מודעות-</b><br />
+        מצב בו הנחנך לא קלט את הגירוי
+        <br />
+        נתמודד עם זה על ידי: 
+        <br />
+        מתן הוכחות מהתצפית,העלאת המודעות, מתן כלים לתשומת לב
+        <br />
         <button @click="closeWindow('mu')" class="ok-btn">אוקיי, הבנתי</button>
       </div>
       <div id="tf" class="mati3">
-        <br />-תפיסה-<br />
-        ?מהיכן זה נובע<br />
-        האמונות,התפיסות והדעות של הנחנך לא תואמות את התורה המקצועית או את המצב
-        הנתון<br /><br />
-        :שאלות לאבחון<br />
-        מה אתה חושב על...? האם אתה מאמין בזה<br /><br />
-        :דרכי טיפול<br />
-        יתרון/חסרון(השלכות הפעולה),הצגת עולם תוכן אחר.<br />
+        <br /><b class="bold-h">-תפיסה-</b><br />
+        האמונות, התפיסות והדעות לא תואמות את התורה המקצועית ולא תואמות את המצב הנתון
+        <br />
+        נתמודד עם זה על ידי:
+        <br />
+        להראות את ההשלכות של הפעולה-יתרונות וחסרונות, דוגמאות מהניסיון
+        <br />
         <button @click="closeWindow('tf')" class="ok-btn">אוקיי, הבנתי</button>
       </div>
       <div id="ye" class="mati3">
-        <br />-יישום-<br />
-        ?מהיכן זה נובע<br />
-        יישום טכני ולא איכותי,בחירת פתרון לא מתאים למצב.<br /><br />
-        :שאלות לאבחון<br />
-        מה אפשר לעשות? איך אפשר אחרת? אילו פתרונות קיימים למצב הזה? <br /><br />
-        :דרכי טיפול<br />
-        תרגולים,ניסיון,הסבר.<br />
+        <br /><b class="bold-h">-יישום-</b><br />
+        יישום טכני לא איכותי,בחירת פתרון לא מתאים למצב
+        <br />
+        נתמודד עם זה על ידי:
+        <br />
+        תרגול,מתן כלים נוספים,הסבר על השלכות בחירת הכלים
+        <br />
         <button @click="closeWindow('ye')" class="ok-btn">אוקיי, הבנתי</button>
       </div>
       <p class="level-header"><b>התנגדויות במשוב</b></p>
@@ -239,7 +241,7 @@ export default {
     return {
       showQuestion: false,
       count: 0,
-      countDown: 5,//30
+      countDown: 30,
       timeOver: false,
       open: ["Users"],
       admins: [
@@ -358,6 +360,7 @@ export default {
 }
 .card-slide {
   height: 10vh;
+  width: 50vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -365,6 +368,8 @@ export default {
   justify-content: center;
   display: flex;
   align-items: center;
+
+
 }
 button {
     border-radius: 0px;
@@ -383,9 +388,17 @@ button {
   padding-inline-start: 0px !important;
 }
 :deep(.card) {
-  padding: 0.5em;
+  padding: 1px;
     font-family: 'assistant-bold';
     background-color: #2a9d8f;
+    font-family: 'assistant-bold';
+    background-color: #2a9d8f;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+
+    
 }
 :deep(.v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line) {
     padding-inline: 16px;
@@ -394,6 +407,7 @@ button {
 :deep(.v-list) {
     --indent-padding: 0px;
     background-color: #2a9d8f;
+    font-family: 'assistant';
 }
 
 :deep(.v-list-item__title) {
@@ -408,7 +422,7 @@ button {
   text-overflow: ellipsis;
   word-break: normal;
   word-wrap: break-word;
-  font-size: 1.1rem;
+  font-size: 5vmin;
   font-weight: 400;
   letter-spacing: 0.009375em;
   line-height: 1.5;
@@ -416,6 +430,15 @@ button {
   direction: ltr;
   text-align: right;
 }
+/* :deep(.swiper-slide) {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
+    width: 50vw;
+} */
 .header-top {
   font-weight: bold;
 }
@@ -448,7 +471,7 @@ button {
 }
 #mu {
   width: 76%;
-  height: 80%;
+  height: 60%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -460,7 +483,7 @@ button {
 }
 #tf {
   width: 76%;
-  height: 80%;
+  height: 60%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -471,7 +494,7 @@ button {
 }
 #ye {
   width: 76%;
-  height: 80%;
+  height: 60%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -479,6 +502,9 @@ button {
   background: #e9c46a;
   z-index: 1;
   display: none;
+}
+.bold-h {
+  font-size: 8vmin;
 }
 .ok-btn {
   position: absolute;
@@ -492,6 +518,7 @@ button {
   border-radius: 0;
   color: white;
   font-family: 'assistant-bold';
+  padding: 1px;
 }
 .selects {
   color:#e76f51 ;

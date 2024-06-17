@@ -108,6 +108,7 @@ export default {
 
   },
   mounted() {
+    this.stopTimer = true;
     var cards = document.querySelectorAll('.card');
 
     [...cards].forEach((card)=>{
@@ -125,21 +126,27 @@ export default {
         timeOver: false,
         counterr: 0,
         coun: 0,
+        stopTimer: true,
     };
   },
   methods: {
     BackToHomePage() {
-        this.$emit("finish-stop-two");
+      for(let i=1;i<=8;i++) {
+        document.getElementById(`answer${i}`).checked=false;
+        document.getElementById(`answer${i}0`).style.color = "white";
+      }
+      document.getElementById("header").innerText = "בוחן פתע! יש לך 30 שניות  לענות נכון על השאלות";
+      this.$emit("finish-stop-two");
     },
     showQuestion() {
         this.showQuestions=true;
         this.countDownTimer();
     },
     countDownTimer() {
-                if(this.countDown > 0) {
+                if(this.countDown > 0 && this.stopTimer) {
                     setTimeout(() => {
-                        this.countDown -= 1
-                        this.countDownTimer()
+                        this.countDown -= 1;
+                        this.countDownTimer();
                     }, 1000)
                 } else {
                     this.timeOver=true;
@@ -172,7 +179,8 @@ export default {
       if(this.counter === 2) {
         this.count = 1;
         document.getElementById("header").innerText = "נכון מאוד, תשובה נכונה";
-        this.countDown = 0;
+        // this.countDown = 0;                                                                                                                                                   
+        this.stopTimer = false;
       }else if(this.counter < 2) {
         document.getElementById("header").innerText = "תשובה לא נכונה , נסו שנית";
         

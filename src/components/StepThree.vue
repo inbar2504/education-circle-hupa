@@ -19,7 +19,7 @@
           <div class="wrapper">
             <img
               id="scratch-img"
-              src="../assets/scratchPage.jpg"
+              src="../assets/paper-tatzpit.png"
               @load="init()"
             />
           </div>
@@ -33,14 +33,16 @@
         </p>
 
         <swiper
-          :slides-per-view="1"
-          :space-between="50"
+          
+          
           @swiper="onSwiper"
           @slideChange="onSlideChange"
           :navigation="true"
           :modules="modules"
           class="mySwiper"
         >
+        <!-- :slides-per-view="1" -->
+        <!-- :space-between="50" -->
           <swiper-slide class="card-slide">מינימום הפרעה לנחנך</swiper-slide>
           <swiper-slide class="card-slide">מינימום הפרעה לחניכים</swiper-slide>
           <swiper-slide class="card-slide">מקסימום איסוף מידע</swiper-slide>
@@ -68,9 +70,9 @@
 <br />
     <button @click="showExtraMsg = true">המשך</button>
     <div v-show="showExtraMsg" id="extra-msg">
-      <h2 id="close-btn" @click="BackToHomePage">X</h2>
+      <h2 id="close-btn" @click="BackToHomePage">&#10005;</h2>
       <p id="information">
-        !שימו לב
+        <b id="bold-header">&#x2764; שימו </b>
         <br />
         לרוב נתערב בתצפית כאשר
         <br />
@@ -153,7 +155,9 @@ export default {
 #step-three {
   margin: 57px;
 }
-
+#bold-header {
+  font-size: 6vmin;
+}
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 10px);
     right: auto;
@@ -241,8 +245,11 @@ export default {
 #close-btn {
   position: relative;
   top: 1vh;
-    right: -27vw;
+  left: 58vw;
   z-index: 4;
+  width: 3%;
+  height: 28%;
+  font-size: 8vmin;
 }
 button {
     border-radius: 8px;
@@ -259,15 +266,16 @@ button {
 }
 #information {
   position: relative;
-  top: -3vh;
-  font-size: 6vmin;
+  top: -4vh;
+  font-size: 5.5vmin;
   text-align: center;
 }
 .card-slide {
-  width: 69vw !important;
+  /* width: 69vw !important; */
+  width: 50vw;
   height: 5vh;
   font-size: 6vmin;
-  margin-right: 55px;
+  /* margin-right: 55px; */
 }
 /* #header-3{
   font-family: 'assistant-bold';

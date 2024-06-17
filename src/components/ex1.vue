@@ -43,14 +43,14 @@
   <button v-if="checking" @click="checkAnswer">בדיקה</button> 
   <button v-if="continue" @click="nextQuestion" >המשך</button>
   <div id="showAnswer">
-    <h4>ראינו שקצת התקשית אז להלן התשובות</h4>
+    <h4 id="bold-header">ראינו שקצת התקשית אז להלן התשובות</h4>
     <p>הכנה עצמית</p>
     <p>תדריך</p>
     <p>תצפית</p>
     <p>עיבוד</p>
     <p>משוב</p>
     <p>סיכום והפקת לקחים</p>
-
+<br />
     <button @click="nextQuestion" >המשך</button>
   </div>
     </div>
@@ -150,6 +150,9 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
 }
+#bold-header {
+  font-family: "assistant-bold";
+}
 .buttons {
   margin-top: 35px;
 
@@ -193,11 +196,11 @@ button {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
-  width: 75%;
-  height: 80%;
-  background-color: pink;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #e9c46a;
   display: none;
-  
+  padding: 30px;
 }
 </style>
