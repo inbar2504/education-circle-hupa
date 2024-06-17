@@ -79,9 +79,9 @@ export default {
       list: [
         { name: "הכנה עצמית", id: 0 },
         { name: "תדריך", id: 1 },
-        { name: "תצפית", id: 2 },
-        { name: "עיבוד", id: 3 },
         { name: "משוב", id: 4 },
+        { name: "עיבוד", id: 3 },
+        { name: "תצפית", id: 2 },
         { name: "סיכום והפקת לקחים", id: 5 },
       ],
       list_update: [

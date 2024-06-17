@@ -28,7 +28,7 @@
             שלב 1-איתור דוגמאות(סימפטומים)<br />
             שלב 2-מציאת מכנה משותף<br />
             שלב 3-בחירת 2 תופעות לשימור ו2 תופעות לשימור<br/>
-            <br /><br/>
+            <!-- <br /><br/> -->
             <button @click="nextQuestion">המשך</button>
        </div>
        <br />
@@ -149,8 +149,8 @@ h1 {
 }
 #countinu {
     display: none;
-    position: relative;
-    top: 13vh;
+    /* position: relative;
+    top: 13vh; */
 }
 #try-again {
     display: none;
@@ -193,6 +193,7 @@ h1 {
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 5px;
+    z-index: 2;
 }
 button {
     border-radius: 0px;
@@ -203,9 +204,12 @@ button {
     background-color: #e9c46a;
     cursor: pointer;
     transition: border-color 0.25s;
-    position: relative;
+    /* position: relative;
     left: 50%;
-    bottom: -20%;
+    bottom: -20%; */
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
     transform: translateX(-50%);
 }
 </style>
