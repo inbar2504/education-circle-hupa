@@ -72,14 +72,7 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "assistant";
-  src: url("./assets/font/Assistant-Regular.ttf");
-}
-@font-face {
-  font-family: "assistant-bold";
-  src: url("./assets/font/Assistant-Bold.ttf");
-}
+
 @font-face {
   font-family: "ellinia";
   src: url("./assets/font/Ellinia CLM Light.ttf");
@@ -101,7 +94,6 @@ body {
 #app {
   overflow-x: hidden;
   font-family: "ellinia-bold";
-  /* font-family: "assistant"; */
 }
 #btn1 {
   font-size: 10vmin;

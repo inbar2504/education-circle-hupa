@@ -20,18 +20,17 @@
         :space-between="50" -->
 
         <swiper-slide class="card-slide" id="o1"
-          >תמיכה באגו ועירור מוטיבציה</swiper-slide
+          ><div class="options">תמיכה באגו ועירור מוטיבציה</div></swiper-slide
         >
-        <swiper-slide class="card-slide" id="o2">איסוף אינפורמציה</swiper-slide>
-        <swiper-slide class="card-slide" id="o3"
-          >מתן לגיטימציה לטעויות</swiper-slide
+        <swiper-slide class="card-slide" id="o2"><div class="options">איסוף אינפורמציה</div></swiper-slide>
+        <swiper-slide class="card-slide" id="o3"><div class="options">מתן לגיטימציה לטעויות</div></swiper-slide
         >
         <swiper-slide class="card-slide" id="o4"
-          >דיבור בשפה משותפת</swiper-slide
+          ><div class="options">דיבור בשפה משותפת></div></swiper-slide
         >
-        <swiper-slide class="card-slide" id="o5">תמציתיות</swiper-slide>
+        <swiper-slide class="card-slide" id="o5"><div class="options">תמציתיות</div></swiper-slide>
         <swiper-slide class="card-slide" id="o6"
-          >עיתוי ומיון מתאים לביצוע שיחת המשוב</swiper-slide
+          ><div class="options">עיתוי ומיון מתאים לביצוע שיחת המשוב</div></swiper-slide
         >
       </swiper>
       <br /><br />
@@ -370,6 +369,9 @@ export default {
   align-items: center;
 
 
+}
+.options {
+  width: 50vw;
 }
 button {
     border-radius: 0px;
