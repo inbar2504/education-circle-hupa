@@ -45,7 +45,7 @@
         
         <p id="some_div">{{ countDown }}</p>
         <p id="header">בוחן פתע! יש לך 30 שניות  לענות נכון על השאלות</p>
-            <fieldset>
+            <fieldset id="que1">
             <legend>מה אינו חלק ממבנה התדריך?</legend>
 
             <div>
@@ -67,7 +67,7 @@
             </div>
             </fieldset>
             <br />
-            <fieldset>
+            <fieldset id="que2">
             <legend>מהו העיקרון שלא קיים בשלב התדריך?</legend>
 
             <div>
@@ -212,8 +212,9 @@ export default {
   margin: 20px;
 }
 #header {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
   color: #e76f51;
+  font-size: 6.5vmin;
 }
 .scene {
     width: 90vw;
@@ -223,7 +224,20 @@ export default {
     display: flex;
     flex-wrap: wrap;
 }
-
+#que1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  font-size: 6vmin;
+}
+#que2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  font-size: 6vmin;
+}
 .card {
   position: relative;
   width: 100%;
@@ -282,8 +296,8 @@ button {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 5vmin;
+    font-weight: bold;
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -293,7 +307,7 @@ button {
     margin: -20px;
 }
 legend {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
     font-size: 7vmin;
     border: 0;
     color: inherit;

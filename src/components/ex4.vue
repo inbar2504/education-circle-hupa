@@ -5,13 +5,13 @@
         <h2 id="wrong-twice">לא נורא, העיקר שתלמד/י מהטעויות</h2>
         <br /><br>
         <div id="question">
-            <h2 id="header-bold">סמנו מה אינו חלק מהשיקולים להתערבות</h2>
+            <h2 id="header-bold">מה הם השיקולים של התערבות ישירה</h2>
             <br />
 
-            <button id= "wrong1" @click="checkAnswer('wrong')" class="ans">מיקום התרגיל בהכשרה</button>
-            <button id= "wrong2" @click="checkAnswer('wrong')" class="ans">פגיעה במטרות התרגיל</button>
-            <button id= "wrong3" @click="checkAnswer('wrong')" class="ans">גיל הנחנך</button>
-            <button id="right" @click="checkAnswer('right')" class="ans">חריגה מהוראות הבטיחות</button>
+            <button id= "wrong1" @click="checkAnswer('wrong')" class="ans">מיקום התרגיל בהכשרה,גיל הנחנך וחריגה מהוראות הבטיחות</button>
+            <button id= "wrong2" @click="checkAnswer('wrong')" class="ans">פגיעה במטרות התרגיל וגיל הנחנך</button>
+            <button id= "wrong3" @click="checkAnswer('wrong')" class="ans">פגיעה במטרות התרגיל,ומיקום התרגיל בהכשרה</button>
+            <button id="right" @click="checkAnswer('right')" class="ans">מיקום התרגיל בהכשרה,פגיעה במטרות התרגיל, וגיל הנחנך</button>
         </div>
         
        <button @click="nextQuestion" id="countinu">המשך</button>
@@ -71,7 +71,7 @@ export default {
     min-width: 100vw;
 }
 #header-bold {
-    font-family: "assistant-bold";
+    font-family: "ellinia-bold";
     font-size: 7vmin;
 }
 .ans {
@@ -84,16 +84,16 @@ export default {
 #you-right {
     display: none;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 8vmin;
 }
 #countinu {
     display: none;
-    position: absolute;
+    position: relative;
     top: 80vh;
     left: 50%;
     transform: translateX(-50%);
@@ -104,12 +104,12 @@ export default {
 #try-again {
     display: none;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    font-family: 'assistant-bold';
-    font-size: 8vmin;
+    font-family: 'ellinia-bold';
+    font-size: 6vmin;
 }
 #wrong-twice {
     display: none;
@@ -118,7 +118,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 8vmin;
 }
 #question {

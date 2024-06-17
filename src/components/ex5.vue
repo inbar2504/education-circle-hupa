@@ -5,13 +5,13 @@
         <h2 id="wrong-twice">לא נורא, העיקר שתלמד/י מהטעויות</h2>
         <br /><br>
         <div id="question">
-            <h2 id="header-bold">מה אינו חלק מהמאפיינים של התערבות ישירה</h2>
+            <h2 id="header-bold">מה נרשום בדף תצפית</h2>
         <br />
 
-        <button id= "wrong1" @click="checkAnswer('wrong')" class="ans">קטיעת רצף התרגיל</button>
-        <button id= "wrong2" @click="checkAnswer('wrong')" class="ans">ריחוק ממצב האמת</button>
-        <button id= "wrong3" @click="checkAnswer('wrong')" class="ans">פתרון מהיר ומיידי</button>
-        <button id="right" @click="checkAnswer('right')" class="ans">דורשת מיומנות גבוהה מהחונך ומהנחנך</button>
+        <button id= "wrong1" @click="checkAnswer('wrong')" class="ans">החניך קפץ</button>
+        <button id= "wrong2" @click="checkAnswer('wrong')" class="ans">החניך גרוע בחומר</button>
+        <button id= "wrong3" @click="checkAnswer('wrong')" class="ans">החניך לא מזהה קונפליקטים</button>
+        <button id="right" @click="checkAnswer('right')" class="ans">החניך זחל בלילה , לאורך 100 מטר, תוך שמירה על גובה מינימאלי </button>
         </div>
         
        <button @click="nextQuestion" id="countinu">המשך</button>
@@ -71,7 +71,7 @@ export default {
     min-width: 100vw;
 }
 #header-bold {
-    font-family: "assistant-bold";
+    font-family: "ellinia-bold";
     font-size: 7vmin;
 }
 .ans {
@@ -88,7 +88,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 8vmin;
 }
 #countinu {
@@ -108,8 +108,8 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    font-family: 'assistant-bold';
-    font-size: 7vmin;
+    font-family: 'ellinia-bold';
+    font-size: 6vmin;
 
 }
 #wrong-twice {
@@ -119,7 +119,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 8vmin;
 }
 #question {

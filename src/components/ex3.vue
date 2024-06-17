@@ -51,46 +51,10 @@
         </select>
         </div>
         </div>
-        <div><br />
-            <h2>אומר כי הוא מצפה לעבודת צוות , תקתוק ויסודיות במסדר</h2><br />
-        <div class="select" id="ques6">
-        <select name="format" id="format6">
-            <option selected disabled>לחץ לבחירה</option>
-            <option  id="que6" value="true">עובדתי</option>
-            <option value="false">שיפוטי</option>
-        </select>
-        </div>
-        </div>
-        <div><br />
-            <h2>סוף זמן אוכל, טירונים נותנים הקשב , מ”כ משחרר ושואל אם כולם אכלו</h2><br />
-        <div class="select" id="ques7">
-        <select name="format" id="format7">
-            <option selected disabled>לחץ לבחירה</option>
-            <option  id="que7" value="true">עובדתי</option>
-            <option value="false">שיפוטי</option>
-        </select>
-        </div>
-        </div>
-        <div><br />
-            <h2>אף אחד לא מודה, הוא מתעצבן</h2><br />
-        <div class="select" id="ques8">
-        <select name="format" id="format8">
-            <option selected disabled>לחץ לבחירה</option>
-            <option value="false">עובדתי</option>
-            <option  id="que8" value="true">שיפוטי</option>
-        </select>
-        </div>
-        </div>
-        <div><br />
-            <h2>אומר ליריב בכעס ובהתנשאות שישאיר לו את תפקיד המפקד על הכיתה</h2><br />
-        <div class="select" id="ques9">
-        <select name="format" id="format9">
-            <option selected disabled>לחץ לבחירה</option>
-            <option value="false">עובדתי</option>
-            <option  id="que9" value="true">שיפוטי</option>
-        </select>
-        </div>
-        </div><br />
+        <br /><br />
+        
+        
+       
         <button id = "check" @click="checkAnswers">בדיקה</button>
         <button id = "countinue" @click="nextQuestion">המשך</button>
     </div>
@@ -111,13 +75,13 @@ export default {
         };
     },
     mounted() {
-        for(let i=1;i<10;i++) {        
+        for(let i=1;i<6;i++) {        
             document.getElementById(`format${i}`).style.color="black";
         }
     },
     methods: {
         checkAnswers() {
-            for(let i=1;i<10;i++) {
+            for(let i=1;i<6;i++) {
                 if(document.getElementById(`que${i}`).selected) {
                     document.getElementById(`format${i}`).style.color="green";
                 } else {
@@ -149,7 +113,7 @@ export default {
    /* max-width: 90vw; */
 }
 #bold-header {
-    font-family: "assistant-bold";
+    font-family: "ellinia-bold";
 }
 select {
 
@@ -166,7 +130,7 @@ select {
    padding: 0 .5em;
    color:#000000;
    cursor:pointer;
-   font-size: 7vmin;
+   font-size: 5vmin;
     text-align: center;
 }
 select::-ms-expand {

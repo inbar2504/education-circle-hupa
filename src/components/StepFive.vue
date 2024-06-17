@@ -101,7 +101,7 @@
         <b class="bold-h">-מודעות-</b><br />
         מצב בו הנחנך לא קלט את הגירוי
         <br />
-        נתמודד עם זה על ידי: 
+        <b>התמודדות</b>
         <br />
         מתן הוכחות מהתצפית,העלאת המודעות, מתן כלים לתשומת לב
         <br />
@@ -111,7 +111,7 @@
         <br /><b class="bold-h">-תפיסה-</b><br />
         האמונות, התפיסות והדעות לא תואמות את התורה המקצועית ולא תואמות את המצב הנתון
         <br />
-        נתמודד עם זה על ידי:
+        <b>התמודדות</b>
         <br />
         להראות את ההשלכות של הפעולה-יתרונות וחסרונות, דוגמאות מהניסיון
         <br />
@@ -119,16 +119,16 @@
       </div>
       <div id="ye" class="mati3">
         <br /><b class="bold-h">-יישום-</b><br />
-        יישום טכני לא איכותי,בחירת פתרון לא מתאים למצב
+        ביצוע טכני לא איכותי, בחירת פתרון/תגובה שלא מתאימים למצב
         <br />
-        נתמודד עם זה על ידי:
+        <b>התמודדות</b>
         <br />
         תרגול,מתן כלים נוספים,הסבר על השלכות בחירת הכלים
         <br />
         <button @click="closeWindow('ye')" class="ok-btn">אוקיי, הבנתי</button>
       </div>
       <p class="level-header"><b>התנגדויות במשוב</b></p>
-      <p>ביטוי התנהגותי של הנחנך לאי רצונו /אי יכולתו להמשך תקשורת עם החונך.</p>
+      <p>ביטוי התנהגותי לאי הסכמה ורצון להפסיק אתהתקשורת עם החונך</p>
       <br />
       <p class="level-header"><b>סיבות להתנגדויות</b></p>
       <p>
@@ -336,7 +336,7 @@ export default {
 
 <style scoped>
 #step-five {
-  font-size: 7vmin;
+  font-size: 6vmin;
   max-width: 78vw;
   background-color: #264653;
   position: absolute;
@@ -356,7 +356,7 @@ export default {
     font-size: 22vmin;
 }
 .level-header {
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
 }
 .card-slide {
   height: 10vh;
@@ -382,6 +382,7 @@ button {
     transition: border-color 0.25s;
     color: #264653;
     background-color: #2a9d8f;
+    font-family: "ellinia-bold";
 }
 :deep(.v-list-group__items .v-list-item) {
   --indent-padding: 0px !important;
@@ -389,9 +390,8 @@ button {
 }
 :deep(.card) {
   padding: 1px;
-    font-family: 'assistant-bold';
     background-color: #2a9d8f;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     background-color: #2a9d8f;
     position: absolute;
     left: 50%;
@@ -401,13 +401,13 @@ button {
     
 }
 :deep(.v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line) {
-    padding-inline: 16px;
+    padding-inline: 68px;
     background-color: #2a9d8f;
 }
 :deep(.v-list) {
     --indent-padding: 0px;
     background-color: #2a9d8f;
-    font-family: 'assistant';
+    font-family: 'ellinia';
 }
 
 :deep(.v-list-item__title) {
@@ -477,7 +477,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #e76f51;
-  z-index: 1;
+  z-index: 2;
   /* display: none; */
   display: none;
 }
@@ -489,7 +489,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #2a9b8f;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 #ye {
@@ -500,7 +500,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #e9c46a;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 .bold-h {
@@ -517,7 +517,7 @@ button {
   background-color: #264653;
   border-radius: 0;
   color: white;
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
   padding: 1px;
 }
 .selects {
@@ -554,7 +554,7 @@ button {
   display: none;
   font-size: 10vmin;
   color: #e76f51;
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
 }
 #you-right {
   font-size: 13vmin;

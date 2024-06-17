@@ -80,6 +80,14 @@ export default {
   font-family: "assistant-bold";
   src: url("./assets/font/Assistant-Bold.ttf");
 }
+@font-face {
+  font-family: "ellinia";
+  src: url("./assets/font/Ellinia CLM Light.ttf");
+}
+@font-face {
+  font-family: "ellinia-bold";
+  src: url("./assets/font/ElliniaCLM-Bold.pfb.ttf");
+}
 * {
   overflow-x: hidden;
   text-align: center;
@@ -92,7 +100,8 @@ body {
 }
 #app {
   overflow-x: hidden;
-  font-family: "assistant";
+  font-family: "ellinia-bold";
+  /* font-family: "assistant"; */
 }
 #btn1 {
   font-size: 10vmin;

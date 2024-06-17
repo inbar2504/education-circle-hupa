@@ -175,12 +175,12 @@ body {
 
 }
 #bold-header {
-    font-family: 'assistant-bold';
+    font-family: 'ellian-bold';
     font-size: 8vmin;
 }
 #ex7 {
   overflow-x: hidden;
-  font-family: "assistant";
+  font-family: "ellinia";
 }
 #btn1 {
   font-size: 10vmin;
@@ -333,6 +333,6 @@ body {
     width: 80vw;
     margin: 3%;
     font-size: 6vmin;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
 }
 </style>

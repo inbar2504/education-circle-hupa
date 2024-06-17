@@ -94,7 +94,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 7vmin;
 }
 #countinu {
@@ -120,8 +120,8 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    font-family: 'assistant-bold';
-    font-size: 7vmin;
+    font-family: 'ellinia-bold';
+    font-size: 6vmin;
 
 }
 #wrong-twice {
@@ -131,11 +131,11 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 7vmin;
 }
 #bold-header {
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 8vmin;
 }
 </style>

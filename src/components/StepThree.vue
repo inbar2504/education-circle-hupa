@@ -4,12 +4,17 @@
       <p id="header">השלב השלישי הינו -תצפית</p>
       <p>
         ביצוע תצפית של החונך על התנסות הנחנך. בשלב זה נצפה בביצוע כדי לאסוף
-        מקסימום אינפורמציה וביצוע בקרה על ביצועי החניך
+        מקסימום אינפורמציה ולבצע בקרה על ביצועי החניך
       </p>
+      <br />
       <p>
-        החונך אוסף את כל המידע שהוא יכול לגבי הנחנך.הוא ממלא “דף תצפית” גרדו את
-        הריבוע על מנת לראות דוגמא לדף תצפית
+        החונך אוסף את כל המידע שהוא יכול לגבי הנחנך        
       </p>
+      <br />
+      <p>
+        הוא ממלא “דף תצפית”. גרדו את
+        הריבוע על מנת לראות דוגמא לדף תצפית
+      </p><br />
       <div id="scratching">
         <vue-scratchable
           v-slot="{ init }"
@@ -28,9 +33,9 @@
       <div>
         <br />
         <p>
-          מיקום התצפית מורכב משלושה היבטים<br />
+          בבחירת מיקום התצפית יש לשים לב לשלושה היבטים<br />
           החליקו שמאלה כדי לראותם
-        </p>
+        </p><br />
 
         <swiper
           
@@ -150,10 +155,12 @@ export default {
   max-width: 70vw;
 }
 #header {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
+  font-size: 7vmin;
 }
 #step-three {
   margin: 57px;
+  font-size: 6vmin;
 }
 #bold-header {
   font-size: 6vmin;
@@ -267,7 +274,7 @@ button {
 #information {
   position: relative;
   top: -4vh;
-  font-size: 5.5vmin;
+  font-size: 5vmin;
   text-align: center;
 }
 .card-slide {
@@ -278,6 +285,6 @@ button {
   /* margin-right: 55px; */
 }
 /* #header-3{
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
 } */
 </style>

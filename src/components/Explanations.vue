@@ -124,7 +124,7 @@ export default {
 
 <style scoped>
 #explanations {
-  font-family: "assistant";
+  font-family: "ellinia";
   font-size: 8vmin;
   overflow: hidden;
   /* max-width: 60vw; */
@@ -159,12 +159,12 @@ p {
     width: 90vw;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
 }
 #step1 {
   position: absolute;
   top: 2vh;
-  left: 58vw
+  left: 61vw
 }
 #step1-img {
   width: 11vw;
@@ -291,6 +291,6 @@ p {
     color: #2a9d8f;
     background-color: #f4a261;
     border-radius: 0;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
 }
 </style>

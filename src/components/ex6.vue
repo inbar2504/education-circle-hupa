@@ -5,14 +5,15 @@
         <br /><br>
         <h2 id="header-bold">לחץ על השלבים בתהליך העיבוד לפי הסדר שלהם</h2>
         <br />
-        <div class="same-div">
+        <div class="options">
+        <div>
             <h1 id="num-10"></h1>
-            <button class = "optional" id= "num-1" value="not-press" @click = "ratedAnswer('num-1')">איתור דוגמאות</button>
+            <button class = "optional" id= "num-1" value="not-press" @click = "ratedAnswer('num-1')">איתור דוגמאות(סימפטומים)</button>
         </div>
         
         <div>
             <h1 id= "num-20"></h1>
-            <button class = "optional" id= "num-2" value="not-press" @click = "ratedAnswer('num-2')">איתור מכנה משותף לסימפטומים שונים</button>
+            <button class = "optional" id= "num-2" value="not-press" @click = "ratedAnswer('num-2')">מציאת מכנה משותף</button>
         </div>
         
         <div>
@@ -20,23 +21,13 @@
             <button class = "optional" id= "num-3" value="not-press" @click = "ratedAnswer('num-3')">בחירת 2 תופעות לשימור ו2 תופעות לשימור</button>
         </div>
        
-        <div>
-            <h1 id= "num-40"></h1>
-            <button class = "optional" id= "num-4" value="not-press" @click = "ratedAnswer('num-4')">ניסוח תופעות</button>
-        </div>
-       
-        <div>
-            <h1 id="num-50"></h1>
-            <button class = "optional" id="num-5" value="not-press" @click = "ratedAnswer('num-5')">כתיבת הערות במידה ויש</button>
-        </div>
+    </div>
        <div id="show-answer">
         <br /><br />
             ראינו שמעט התקשית- להלן התשובות<br/>
-            שלב 1-איתור דוגמאות<br />
-            שלב 2-איתור מכנה משותף לסימפטומים שונים<br />
+            שלב 1-איתור דוגמאות(סימפטומים)<br />
+            שלב 2-מציאת מכנה משותף<br />
             שלב 3-בחירת 2 תופעות לשימור ו2 תופעות לשימור<br/>
-            שלב 4-ניסוח תופעות<br />
-            שלב 5-כתיבת הערות במידה ויש<br />
             <br /><br/>
             <button @click="nextQuestion">המשך</button>
        </div>
@@ -79,7 +70,7 @@ export default {
                     
 
             }
-            if(this.countAnswer == 5) {
+            if(this.countAnswer == 3) {
                 document.getElementById("check").style.display = "block";
             }   
         },
@@ -88,7 +79,7 @@ export default {
         },
         checkAnswer() {
             this.IsWrong = false;
-            for(let i=1;i<=5;i++) {
+            for(let i=1;i<=3;i++) {
                 if(document.getElementById(`num-${i}`).name !== String(i)) {
                     this.IsWrong = true;
                     document.getElementById(`num-${i}`).style.color = "red";
@@ -125,7 +116,7 @@ export default {
 }
 
 #header-bold {
-    font-family: "assistant-bold";
+    font-family: "ellinia-bold";
     font-size: 7vmin;
 }
 h1 {
@@ -136,6 +127,10 @@ h1 {
     height: 5vh;
     font-size: 7vmin;
 }
+.options {
+    position: relative;
+    top: 8vh;
+}
 .ans {
     margin: 2%;
     width: 85%;
@@ -145,25 +140,27 @@ h1 {
 #you-right {
     display: none;
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     font-size: 8vmin;
 }
 #countinu {
     display: none;
+    position: relative;
+    top: 13vh;
 }
 #try-again {
     display: none;
     position: absolute;
-    top: 14vh;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    font-family: 'assistant-bold';
-    font-size: 7vmin;
+    font-family: 'ellinia-bold';
+    font-size: 6vmin;
 }
 .optional {
     width: 53vw;
@@ -182,6 +179,8 @@ h1 {
 }
 #check {
     display: none;
+    position: relative;
+    top: 13vh;
 }
 #show-answer {
     display: none;

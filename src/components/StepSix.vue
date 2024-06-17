@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .bold-header {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
 }
 button {
     border-radius: 8px;

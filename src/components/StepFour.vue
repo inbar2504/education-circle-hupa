@@ -149,7 +149,7 @@ export default {
 
 }
 #level-header {
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
   font-size: 8vmin;
 }
 .circle {
@@ -163,7 +163,7 @@ export default {
     margin-top: 10%;
     margin-left: 30%;
     font-size: 5vmin;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     padding: 3px;
 }
 #circle1 {
@@ -176,7 +176,7 @@ export default {
   background-color: #e76f51;
 }
 #bold-header {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
 }
 #some_div {
     position: absolute;
@@ -212,7 +212,7 @@ button {
     border-radius: 0;
     color: #2a9d8f;
     background-color: #264653;
-    font-family: 'assistant-bold';
+    font-family: 'ellinia-bold';
     padding: 5px;
     width: 30vw;
 }

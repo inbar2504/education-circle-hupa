@@ -39,7 +39,7 @@
     <!-- <rawDisplayer class="col-3" :value="list" title="List" /> -->
 
   </div>
-  <br /><br />
+  <br />
   <button v-if="checking" @click="checkAnswer">בדיקה</button> 
   <button v-if="continue" @click="nextQuestion" >המשך</button>
   <div id="showAnswer">
@@ -151,7 +151,7 @@ button {
     transition: border-color 0.25s;
 }
 #bold-header {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
 }
 .buttons {
   margin-top: 35px;
@@ -163,7 +163,9 @@ button {
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
+  padding: 2px;
+  margin: 9px;
 }
 .ghost {
   opacity: 0.5;
@@ -180,16 +182,16 @@ button {
   left: 50%;
   transform: translateX(-50%);
   width: 80vw;
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
 
 }
 #wrong {
   position: absolute;
-  top: -9vh;
+  top: -13vh;
   left: 50%;
   transform: translateX(-50%);
   width: 80vw;
-  font-family: 'assistant-bold';
+  font-family: 'ellinia-bold';
   display: none;
 }
 #showAnswer {

@@ -123,8 +123,8 @@ export default {
 } */
 
 #step-one {
-  font-family: "assistant";
-    font-size: 8vmin;
+  font-family: "ellinia";
+    font-size: 7vmin;
     background-color: #f4a261;
     text-align: center;
     display: flow;
@@ -137,12 +137,12 @@ export default {
   height: 2%;
 }
 .answers {
-  font-size: 6vmin;
+  font-size: 5vmin;
 }
 button {
     border: 1px solid transparent;
     padding: 15px;
-    font-size: 5vmin;
+    font-size: 6vmin;
     font-weight: 500;
     background-color: #1a1a1a;
     cursor: pointer;
@@ -151,6 +151,7 @@ button {
     background-color: #e9c46a;
     margin: 15px;
     border-radius: 0;
+    font-family: "ellinia-bold";
 }
 #field {
   direction: rtl;
@@ -159,18 +160,18 @@ button {
   align-items: flex-start;
 }
 .bold-font {
-  font-family: "assistant-bold";
+  font-family: "ellinia-bold";
 }
 
 #try-again {
     display: none;
     position: absolute;
-    top: 33vh;
+    /* top: 33vh; */
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    font-family: 'assistant-bold';
-    font-size: 8vmin;
+    font-family: 'ellinia-bold';
+    font-size: 6vmin;
     color: #f44336;
 
 }
