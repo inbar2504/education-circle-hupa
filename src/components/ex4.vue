@@ -73,6 +73,8 @@ export default {
 #header-bold {
     font-family: "ellinia-bold";
     font-size: 7vmin;
+    position: relative;
+    top: 0vh;
 }
 .ans {
     margin: 2%;

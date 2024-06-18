@@ -171,8 +171,6 @@ export default {
 body {
   /* background-size: 100% 100%; */
   background-color: #e76f51;
-
-
 }
 #bold-header {
     font-family: 'ellian-bold';

@@ -2,7 +2,7 @@
     <div id="ex1">
       <h3 id="right">🎉 נכון,כל הכבוד 🎉</h3>
         <h3 id="wrong">נסה שוב... תשובה לא נכונה</h3>
-        <h4>סדרו את שלבי מעגל החניכה לפי הסדר מלמעלה ללמטה על ידי גרירה שלהם</h4>
+        <h4 id="header-font">סדרו את שלבי מעגל החניכה לפי הסדר מלמעלה ללמטה על ידי גרירה שלהם</h4>
         <div class="row">
         <div class="col-2">
           <div class="form-group">
@@ -136,9 +136,12 @@ export default {
   font-size: 7vmin;
     min-width: 72vw;
     position: absolute;
-    top: 16vh;
+    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
+}
+#header-font {
+  font-size: 6vmin;
 }
 button {
     border-radius: 0;
@@ -166,6 +169,7 @@ button {
   font-family: 'ellinia-bold';
   padding: 2px;
   margin: 9px;
+  font-size: 5vmin;
 }
 .ghost {
   opacity: 0.5;
