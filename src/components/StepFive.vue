@@ -86,7 +86,7 @@
           </v-list-group>
         </v-list>
       </v-card>
-      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br />
       <p class="level-header">מתן המשוב</p>
       <p>
         בעת מתן המשוב נבדוק קודם מה הסיבה שלושת הסיבות שנבדוק הן: מודעות , תפיסה
@@ -395,7 +395,7 @@ button {
     background-color: #2a9d8f;
     font-family: 'ellinia-bold';
     background-color: #2a9d8f;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     z-index:2;
