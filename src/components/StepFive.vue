@@ -335,6 +335,7 @@ export default {
 
 <style scoped>
 #step-five {
+  color: white;
   font-size: 6vmin;
   max-width: 78vw;
   background-color: #264653;

@@ -101,7 +101,7 @@ export default {
 
 <style scoped>
 * {
-  max-width: 70vw;
+  max-width: 80vw;
 }
 #step-four {
   background-color: #2a9d8f;
@@ -110,7 +110,7 @@ export default {
   min-height: 100vh;
   display: flow;
   text-align: center;
-  padding: 60px;
+  padding: 40px;
   font-size: 7vmin;
 }
 /* .swiper {
@@ -223,4 +223,5 @@ button {
     padding: 5px;
     width: 30vw;
 }
+
 </style>

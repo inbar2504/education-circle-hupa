@@ -50,20 +50,20 @@
 
             <div>
                 <input type="radio" id="answer1" name="question1" value="false1"/>
-                <label for="answer1" id="answer10">הגדרת מתן הגדרות</label>
+                <label for="answer1" id="answer10"> הגדרת מתן הגדרות</label>
             </div>
 
             <div>
                 <input type="radio" id="answer2" name="question1" value="false2"/>
-                <label for="answer2" id="answer20">מתן דגשים לביצוע</label>
+                <label for="answer2" id="answer20"> מתן דגשים לביצוע</label>
             </div>
             <div>
                 <input type="radio" id="answer3" name="question1" value="false3"/>
-                <label for="answer3" id="answer30">בדיקת הבנה</label>
+                <label for="answer3" id="answer30"> בדיקת הבנה</label>
             </div>
             <div>
                 <input type="radio" id="answer4" name="question1" value="true4"/>
-                <label for="answer4" id="answer40">שיחה אישית</label>
+                <label for="answer4" id="answer40"> שיחה אישית</label>
             </div>
             </fieldset>
             <br />
@@ -72,20 +72,20 @@
 
             <div>
                 <input type="radio" id="answer5" name="question2" value="true5"/>
-                <label for="ans1" id="answer50">פירוט ברישום</label>
+                <label for="ans1" id="answer50"> פירוט ברישום</label>
             </div>
 
             <div>
                 <input type="radio" id="answer6" name="question2" value="false6"/>
-                <label for="ans2" id="answer60">סדר הגיוני</label>
+                <label for="ans2" id="answer60"> סדר הגיוני</label>
             </div>
             <div>
                 <input type="radio" id="answer7" name="question2" value="false7"/>
-                <label for="ans3" id="answer70">עירור מוטיבציה</label>
+                <label for="ans3" id="answer70"> עירור מוטיבציה</label>
             </div>
             <div>
                 <input type="radio" id="answer8" name="question2" value="false8"/>
-                <label for="answer8" id="answer80">גורמי סביבה ומסגרת</label>
+                <label for="answer8" id="answer80"> גורמי סביבה ומסגרת</label>
             </div>
             </fieldset>
            <br>
