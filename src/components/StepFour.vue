@@ -44,6 +44,7 @@
       <button id="right2" @click='checkAnswer("right2","green","wrong2")'>נכון</button> / <button id="wrong2" @click='checkAnswer("wrong2","red","right2")'>לא נכון</button>
 
     </div>
+    <br />
     <button id="continue" @click="BackToHomePage">המשך</button>
   </div>
 </template>
@@ -124,8 +125,10 @@ export default {
     width: 75vw;
 } */
 .text-card {
-  width: 50vw;
-  font-size: 6.5vmin;
+  /* width: 50vw;
+  font-size: 6.5vmin; */
+  width: 62vw;
+  font-size: 5vmin;
  }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 10px);
@@ -193,10 +196,14 @@ export default {
 }
 #continue {
   display: none;
-  position: absolute;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 75vh;
+    top: 75vh; */
 }
 #questions {
   font-size: 7vmin;

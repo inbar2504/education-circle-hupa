@@ -295,7 +295,7 @@ export default {
 button {
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 0.6em 1.2em;
+    padding: 10px;
     font-size: 5vmin;
     font-weight: bold;
     background-color: #1a1a1a;

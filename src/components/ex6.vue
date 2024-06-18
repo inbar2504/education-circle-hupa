@@ -149,6 +149,10 @@ h1 {
 }
 #countinu {
     display: none;
+    position: relative;
+    top: 15vh;
+    font-size: 8vmin;
+    padding: 10px;
     /* position: relative;
     top: 13vh; */
 }
@@ -198,7 +202,7 @@ h1 {
 button {
     border-radius: 0px;
     border: 1px solid transparent;
-    padding: 0.6em 1.2em;
+    padding: 10px;
     font-size: 6vmin;
     font-weight: 500;
     background-color: #e9c46a;

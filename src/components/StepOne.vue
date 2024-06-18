@@ -141,7 +141,7 @@ export default {
 }
 button {
     border: 1px solid transparent;
-    padding: 15px;
+    padding: 10px;
     font-size: 6vmin;
     font-weight: 500;
     background-color: #1a1a1a;

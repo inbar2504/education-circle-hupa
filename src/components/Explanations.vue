@@ -284,7 +284,7 @@ p {
 }
 #back-btn {
   position: absolute;
-    top: 87vh;
+    top: 75vh;
     /* z-index: 33; */
     left: 50%;
     transform: translateX(-50%);

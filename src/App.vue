@@ -94,25 +94,26 @@ body {
 #app {
   overflow-x: hidden;
   font-family: "ellinia-bold";
+  
 }
 #btn1 {
   font-size: 10vmin;
     z-index: 10;
     background-color: bisque;
     position: absolute;
-    top: 85.5vh;
+    top: 75vh;
     border-radius: 0px;
     left: 10vw;
-    padding: 20px;
+    padding: 10px;
 }
 #btn2 {
   font-size: 10vmin;
     z-index: 10;
     background-color: bisque;
     position: absolute;
-    top: 85.5vh;
+    top: 75vh;
     border-radius: 0px;
-    padding: 20px;
+    padding: 10px;
     right: 10vw;
 }
 #btn {
@@ -120,21 +121,34 @@ body {
   z-index: 10;
   background-color: bisque;
   position: absolute;
-  top: 85.5vh;
+  top: 70vh;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 0px;
 }
 #header {
   font-size: 11vmin;
-  margin: -12px;
+    /* margin: -12px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1vh;
+    min-width: 90vw;
+
+  /* font-size: 11vmin;
+  margin: -12px; */
+  /* width: 80vw;
+  position: absolute;
+  left: 50%;
+  top: 30vh;
+  transform: translateX(-50%); */
 }
 #orange-line {
   background-color: #f4a261;
     position: absolute;
     top: 10%;
     left: 0%;
-    width: 100vw;
+    min-width: 100vw;
     height: 72vh;
     z-index:2;
 }
@@ -143,7 +157,7 @@ body {
     position: absolute;
     top: 15%;
     left: 0%;
-    width: 100vw;
+    min-width: 100vw;
     height: 60vh;
     z-index:3;
 }
@@ -152,7 +166,7 @@ body {
   position: absolute;
   top: 19%;
   left: 0%;
-  width: 100vw;
+  min-width: 100vw;
   height: 47vh;
   z-index: 3;
 }
@@ -161,22 +175,22 @@ body {
   position: absolute;
   top: 24%;
   left: 0%;
-  width: 100vw;
+  min-width: 100vw;
   height: 40vh;
   z-index: 4;
 }
 #red-book-1 {
   position: absolute;
-    top: 13%;
-    width: 20%;
-    left: 38%;
+  top: 13%;     
+  width: 20%;     
+  left: 36%;
     z-index: 3;
 }
 #orange-book-1 {
   position: absolute;
-  top: 17%;
-  width: 32%;
-  left: 42%;
+  top: 15%;
+    width: 32%;
+    left: 42%;
   z-index: 1;
 }
 #yellow-book-1 {
