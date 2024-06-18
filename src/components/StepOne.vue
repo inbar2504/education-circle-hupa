@@ -23,28 +23,28 @@
 
         <div>
           <input type="checkbox" id="horns0" name="true" />
-          <label class = "answers" for="horns0" id="horns00">מה הידע שלו</label>
+          <label class = "answers" for="horns0" id="horns00"> מה הידע שלו   </label>
         </div>
 
         <div>
           <input type="checkbox" id="horns1" name="true" />
-          <label class = "answers" for="horns1" id="horns10">איזה נסיון יש לו</label>
+          <label class = "answers" for="horns1" id="horns10"> איזה נסיון יש לו  </label>
         </div>
         <div>
           <input type="checkbox" id="horns2" name="true" />
-          <label class = "answers" for="horns2" id="horns20">מה מקומו בתהליך ההכשרה</label>
+          <label class = "answers" for="horns2" id="horns20"> מה מקומו בתהליך ההכשרה</label>
         </div>
         <div>
           <input type="checkbox" id="horns3" name="true" />
-          <label class = "answers" for="horns3" id="horns30">אבחון תכונותיו</label>
+          <label class = "answers" for="horns3" id="horns30"> אבחון תכונותיו</label>
         </div>
         <div>
           <input type="checkbox" id="horns4" name="true" />
-          <label class = "answers" for="horns4" id="horns40">מה המשימה</label>
+          <label class = "answers" for="horns4" id="horns40"> מה המשימה</label>
         </div>
         <div>
           <input type="checkbox" id="horns5" name="false" />
-          <label class = "answers" for="horns5" id="horns50">איפה הוא גר</label>
+          <label class = "answers" for="horns5" id="horns50"> איפה הוא גר</label>
         </div>
       </div>
       <button v-if="count === 0" id="check" @click="checkAnswer">בדיקה</button>

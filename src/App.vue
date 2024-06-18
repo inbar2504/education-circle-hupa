@@ -127,7 +127,7 @@ body {
   border-radius: 0px;
 }
 #header {
-  font-size: 11vmin;
+  font-size: 9.5vmin;
     /* margin: -12px; */
     position: absolute;
     left: 50%;

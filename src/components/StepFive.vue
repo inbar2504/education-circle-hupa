@@ -371,7 +371,7 @@ export default {
 
 }
 .options {
-  width: 50vw;
+  width: 55vw;
 }
 button {
     border-radius: 0px;
